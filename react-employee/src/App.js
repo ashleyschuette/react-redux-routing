@@ -17,6 +17,12 @@ class App extends Component {
   }
 
   addEmployee(name, hireDate, title) {
+    // let newEmployee = {
+    //    name: name,
+    //    hireDate: hireDate,
+    //    title: title  
+    // }
+    // Code above and below do the same thing.
     let newEmployee = { name, hireDate, title }
     this.setState({
       employees: [ ...this.state.employees, newEmployee ]
